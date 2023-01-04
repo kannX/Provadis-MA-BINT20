@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Uebung 2 BINT20</string>
+    <string name="helloCounter">Hello <b>Telekom</b>! Clicked %1$d times.</string>
+</resources>
