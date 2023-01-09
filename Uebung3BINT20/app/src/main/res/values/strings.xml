@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exercise3</string>
+    <string name="hello">Hello <b>Provadis</b>!</string>
+    <string name="hello_count">Hello <b>Provadis</b>! %1$d</string>
+    <string name="button">Push me</string>
+    <string name="newKey">a value</string>
+</resources>
