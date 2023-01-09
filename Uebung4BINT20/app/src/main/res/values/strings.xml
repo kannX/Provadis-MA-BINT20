@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exercise4</string>
+    <string name="hello">Hello <b>Provadis</b>!</string>
+    <string name="hello_count">Hello <b>Provadis</b>! %1$d</string>
+    <string name="toast_text">Greetings %1$s</string>
+    <string name="toast_other_button">called buttonClicked method</string>
+</resources>

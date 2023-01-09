@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Übung4</string>
+    <string name="hello">Einen schönen guten Tag <b>Provadis</b>!</string>
+    <string name="hello_count">Ei Gude <b>Provadis</b>! %1$d</string>
+    <string name="toast_text">Ei gude %1$s</string>
+    <string name="toast_other_button">buttonClicked-Methode aufgerufen</string>
+</resources>
