@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Uebung10</string>
+    <string name="date">Selected date: day %1$d, month %2$d, year %3$d</string>
+</resources>
