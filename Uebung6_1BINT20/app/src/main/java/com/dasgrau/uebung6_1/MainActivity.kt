@@ -2,8 +2,11 @@ package com.dasgrau.uebung6_1
 
 import android.Manifest
 import android.content.pm.PackageManager
+import android.database.ContentObserver
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.provider.CallLog
 import android.util.Log
 import android.widget.ListView
@@ -34,6 +37,15 @@ class MainActivity : AppCompatActivity() {
            Log.i(TAG, "Permission already granted")
            queryCalls()
        }
+
+        // optional: für live updates
+        contentResolver.registerContentObserver(CallLog.Calls.CONTENT_URI, false,
+            object: ContentObserver(Handler(Looper.getMainLooper())) {
+                override fun onChange(selfChange: Boolean) {
+                    super.onChange(selfChange)
+                    queryCalls()
+                }
+            })
     }
 
     override fun onRequestPermissionsResult(

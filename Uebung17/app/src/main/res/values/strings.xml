@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Uebung17</string>
+    <string name="template">%1$s%2$s</string>
+</resources>
