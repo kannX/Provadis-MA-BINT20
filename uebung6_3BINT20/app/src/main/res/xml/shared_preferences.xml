@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="Beispieleinstellungen">
+
+        <EditTextPreference
+            app:key="editText"
+            app:title="Ein String"
+            app:useSimpleSummaryProvider="true" />
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:key="checkBox"
+            app:summary="Kann man ein- und ausschalten"
+            app:title="Eine Checkbox" />
+        <SeekBarPreference
+            android:max="5"
+            app:defaultValue="3"
+            app:dependency="checkBox"
+            app:icon="@drawable/baseline_stars_24"
+            app:key="seekBar"
+            app:min="0"
+            app:showSeekBarValue="true"
+            app:summary="Grenzbereiche können auch angepasst werden"
+            app:title="SeekBar 0-5" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/baseline_color_lens_24"
+        app:title="Design">
+        <ListPreference
+            app:defaultValue="1"
+            app:dialogTitle="Theme"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:key="light"
+            app:title="Choose your Theme"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/baseline_settings_24"
+        app:title="Mehr Einstellungen">
+        <SwitchPreferenceCompat
+            app:key="switchPreference"
+            app:summary="Sieht toll aus"
+            app:title="Ein Schalter" />
+
+        <ListPreference
+            app:defaultValue="3"
+            app:dependency="switchPreference"
+            app:entries="@array/list_pref_titles"
+            app:entryValues="@array/list_pref_values"
+            app:key="listPref"
+            app:title="Eine Listenauswahl (aus Array)"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

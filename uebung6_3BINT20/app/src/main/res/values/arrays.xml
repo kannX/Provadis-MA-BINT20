@@ -1,0 +1,29 @@
+<resources>
+    <string-array name="theme_entries">
+        <item>Hell</item>
+        <item>Dunkel</item>
+        <item>Systemvorgabe</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="list_pref_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="list_pref_titles">
+        <item>sehr gut</item>
+        <item>gut</item>
+        <item>befriedigend</item>
+        <item>ausreichend</item>
+        <item>mangelhaft</item>
+        <item>ungenügend</item>
+    </string-array>
+</resources>
